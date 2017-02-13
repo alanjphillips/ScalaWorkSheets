@@ -18,3 +18,6 @@ myPartialF4(Some(101))
 
 myPartialF4(None)
 
+partialF1.isDefinedAt(Some(10))
+
+partialF1.isDefinedAt(Some(1000))
