@@ -100,3 +100,6 @@ val fResult: Future[Int] = fut1.flatMap(
     )
   )
 )
+
+val toFutStr: (Int) => Future[String] = i => Future { i.toString }
+val futStr2: Future[String] = fut1.flatMap(toFutStr)
